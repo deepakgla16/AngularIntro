@@ -22,5 +22,15 @@ export class AppComponent {
     window.open(this.link,"_blank")
   }
 
+  onInput($event){
+    console.log("Chnaged event :",$event.data);
+    const nameRegex=RegExp('^[A-z]{1}[a-zA-Z\\s]{2,}$');
+    if (nameRegex.test(this.userName)) {
+      this.nameError="";
+      return;
+    }
+    this.nameError="Name is incorrect";
+  }
+
   
 }
