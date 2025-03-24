@@ -8,10 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'HelloWorld';
   url="../assets/download.avif"
+  link="https://www.bridgelabz.com/"
   
   ngOnInit(): void{
     this.title="hello from bridgeLabz"
+    
   }
 
-  
+  onClick($event){
+    console.log("save button is clicked", $event);
+    window.open(this.link,"_blank")
+  }
 }

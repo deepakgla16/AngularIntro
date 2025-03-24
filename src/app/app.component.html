@@ -4,6 +4,6 @@
 </div>
 
 <div>
-  <img [src]="url" alt="Bridgelabz logo">
+  <img [src]="url" (click)="onClick($event)" alt="Bridgelabz logo">
 </div>
 <router-outlet></router-outlet>
