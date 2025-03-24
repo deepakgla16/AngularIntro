@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'HelloWorld';
+  url="../assets/download.avif"
   
   ngOnInit(): void{
     this.title="hello from bridgeLabz"
